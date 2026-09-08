@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WholesaleChairs.ca — Commercial Chairs, Wholesale Pricing, Canada-Wide Delivery</title>
+  <meta name="description" content="Canada's B2B commercial chair supplier for restaurants, cafés, hotels and banquet halls. Wholesale pricing on 20, 50, 100+ chairs. Request a free wholesale quote today." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://wholesalechairs.ca/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wholesalechairs.ca/" />
+  <meta property="og:title" content="WholesaleChairs.ca — Commercial Chairs, Wholesale Pricing, Canada-Wide" />
+  <meta property="og:description" content="Wholesale commercial chairs for restaurants, cafés, hotels and banquet halls across Canada. Bulk orders welcome." />
+  <meta property="og:image" content="https://wholesalechairs.ca/images/og-image.jpg" />
+  <meta property="og:locale" content="en_CA" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- JSON-LD: Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "WholesaleChairs.ca",
+    "url": "https://wholesalechairs.ca",
+    "logo": "https://wholesalechairs.ca/images/logo.png",
+    "description": "Canadian B2B commercial chair supplier offering wholesale pricing on restaurant chairs, café chairs, bar stools, banquet chairs and hospitality seating.",
+    "areaServed": "CA",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CA"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Sales",
+      "email": "info@wholesalechairs.ca"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the minimum order quantity for wholesale chairs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We work with commercial buyers ordering 20 or more chairs. Larger orders of 50, 100 or more qualify for deeper wholesale pricing. Contact us for a custom quote."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you ship chairs across Canada?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We deliver wholesale chair orders Canada-wide, including Ontario, British Columbia, Alberta, Quebec, and all other provinces and territories."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does delivery take for bulk chair orders?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lead times vary depending on the product, quantity and your location. We provide estimated delivery timelines when we send your wholesale quote."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I order custom or upholstered chairs in my brand colours?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We offer custom commercial seating options including upholstery, frame finishes and colour matching. Request a quote and describe your requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you sell to individual consumers or homeowners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WholesaleChairs.ca is a B2B supplier for restaurants, cafés, hotels, banquet halls, contractors and commercial buyers. We do not service individual consumer orders."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of commercial chairs do you carry?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We supply restaurant chairs, café chairs, bar stools, banquet chairs, upholstered chairs, metal chairs, wood chairs, patio chairs, hotel and hospitality seating, and custom commercial seating."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* =============================================
+       RESET & BASE
+    ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #1a1a2e;
+      background: #fff;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* =============================================
+       COLOUR TOKENS
+    ============================================= */
+    :root {
+      --navy:    #1c2b3a;
+      --gold:    #c8912a;
+      --gold-dk: #a87420;
+      --light:   #f7f8fa;
+      --border:  #e4e7ec;
+      --muted:   #6b7280;
+      --white:   #ffffff;
+      --radius:  8px;
+      --shadow:  0 2px 16px rgba(0,0,0,.08);
+    }
+
+    /* =============================================
+       UTILITY
+    ============================================= */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-weight: 700;
+      font-size: .95rem;
+      letter-spacing: .04em;
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--gold-dk); transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: var(--white);
+      font-weight: 700;
+      font-size: .95rem;
+      letter-spacing: .04em;
+      padding: 13px 32px;
+      border-radius: var(--radius);
+      border: 2px solid var(--white);
+      cursor: pointer;
+      transition: background .2s, color .2s, transform .15s;
+    }
+    .btn-outline:hover { background: var(--white); color: var(--navy); transform: translateY(-1px); }
+    .btn-navy {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      font-weight: 700;
+      font-size: .95rem;
+      letter-spacing: .04em;
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+    .btn-navy:hover { background: #253a4e; transform: translateY(-1px); }
+    .section-label {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.25;
+    }
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-top: 12px;
+      max-width: 600px;
+    }
+    .text-center { text-align: center; }
+    .text-center .section-sub { margin-left: auto; margin-right: auto; }
+
+    /* =============================================
+       HEADER / NAV
+    ============================================= */
+    #site-header {
+      background: var(--navy);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,.15);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      gap: 20px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -.01em;
+      white-space: nowrap;
+    }
+    .logo span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,.8);
+      font-size: .9rem;
+      font-weight: 500;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .header-cta {
+      background: var(--gold);
+      color: var(--white) !important;
+      padding: 8px 20px;
+      border-radius: var(--radius);
+      font-weight: 700 !important;
+      font-size: .85rem !important;
+      transition: background .2s !important;
+    }
+    .header-cta:hover { background: var(--gold-dk) !important; }
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      padding: 4px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: .3s;
+    }
+
+    /* =============================================
+       HERO
+    ============================================= */
+    #hero {
+      /* Replace /images/hero-bg.jpg with your commercial chair showroom or lifestyle photo */
+      background: linear-gradient(135deg, var(--navy) 55%, #253a4e 100%);
+      color: var(--white);
+      padding: 90px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    #hero::after {
+      content: '';
+      position: absolute;
+      right: 0; top: 0; bottom: 0;
+      width: 42%;
+      /* REPLACE this placeholder with: background-image: url('/images/hero-chairs.jpg'); background-size: cover; background-position: center; */
+      background: rgba(255,255,255,.04);
+      clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 620px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200,145,42,.18);
+      border: 1px solid rgba(200,145,42,.4);
+      color: #f0c060;
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 40px;
+      margin-bottom: 24px;
+    }
+    #hero h1 {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -.02em;
+    }
+    #hero h1 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    #hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,.82);
+      line-height: 1.65;
+      margin-bottom: 36px;
+      max-width: 560px;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 36px;
+      margin-top: 52px;
+      flex-wrap: wrap;
+    }
+    .hero-stat-val {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--gold);
+    }
+    .hero-stat-lbl {
+      font-size: .8rem;
+      color: rgba(255,255,255,.6);
+      font-weight: 500;
+    }
+
+    /* =============================================
+       TRUST BAR
+    ============================================= */
+    #trust-bar {
+      background: var(--light);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 0;
+    }
+    .trust-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .trust-icon {
+      width: 20px;
+      height: 20px;
+      fill: var(--gold);
+    }
+
+    /* =============================================
+       CATEGORIES
+    ============================================= */
+    #categories { padding: 80px 0; background: var(--white); }
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 18px;
+      margin-top: 40px;
+    }
+    .cat-card {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: box-shadow .2s, transform .2s;
+      cursor: pointer;
+    }
+    .cat-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); }
+    .cat-img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      background: #dde3ea;
+      /* Each image below is a placeholder — replace with your product photo */
+    }
+    .cat-img-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #dde3ea, #c8d0da);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .7rem;
+      color: #8a96a3;
+      text-align: center;
+      padding: 8px;
+      letter-spacing: .03em;
+    }
+    .cat-body {
+      padding: 14px 16px;
+    }
+    .cat-name {
+      font-weight: 700;
+      font-size: .92rem;
+      color: var(--navy);
+    }
+    .cat-link {
+      font-size: .78rem;
+      color: var(--gold);
+      font-weight: 600;
+      margin-top: 4px;
+      display: block;
+    }
+
+    /* =============================================
+       FEATURED PRODUCTS
+    ============================================= */
+    #featured { padding: 80px 0; background: var(--light); }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .product-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .product-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,.1); transform: translateY(-3px); }
+    .product-img-wrap {
+      width: 100%;
+      aspect-ratio: 1/1;
+      background: linear-gradient(135deg, #e0e6ed, #ccd4dd);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .72rem;
+      color: #8a96a3;
+      text-align: center;
+      padding: 12px;
+      letter-spacing: .03em;
+      /* When you have real images, replace the background with:
+         background-image: url('/images/product-name.jpg'); background-size: cover; background-position: center; */
+    }
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product-body { padding: 18px; }
+    .product-tag {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .product-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 6px 0 8px;
+      line-height: 1.3;
+    }
+    .product-desc {
+      font-size: .85rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+    .product-moq {
+      font-size: .78rem;
+      color: var(--muted);
+    }
+    .product-moq strong { color: var(--navy); font-weight: 700; }
+    .product-cta {
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: .03em;
+    }
+    .product-cta:hover { color: var(--gold-dk); }
+
+    /* =============================================
+       BULK ORDER CTA
+    ============================================= */
+    #bulk-cta {
+      background: var(--navy);
+      color: var(--white);
+      padding: 80px 0;
+      text-align: center;
+    }
+    #bulk-cta h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    #bulk-cta p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.75);
+      max-width: 580px;
+      margin: 0 auto 36px;
+    }
+    .bulk-tiers {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .tier-badge {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 40px;
+      padding: 10px 24px;
+      font-size: .88rem;
+      font-weight: 600;
+    }
+    .tier-badge span { color: var(--gold); }
+
+    /* =============================================
+       WHY US
+    ============================================= */
+    #why-us { padding: 80px 0; background: var(--white); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 28px;
+      margin-top: 44px;
+    }
+    .why-card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--light);
+    }
+    .why-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(200,145,42,.12);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .why-icon svg { width: 22px; height: 22px; fill: var(--gold); }
+    .why-title { font-weight: 700; font-size: 1rem; color: var(--navy); margin-bottom: 8px; }
+    .why-desc { font-size: .88rem; color: var(--muted); line-height: 1.6; }
+
+    /* =============================================
+       INDUSTRIES
+    ============================================= */
+    #industries { padding: 80px 0; background: var(--light); }
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+      margin-top: 40px;
+    }
+    .industry-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 18px;
+      text-align: center;
+      transition: box-shadow .2s, border-color .2s;
+    }
+    .industry-card:hover { box-shadow: var(--shadow); border-color: var(--gold); }
+    .industry-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .industry-name {
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    /* =============================================
+       DELIVERY
+    ============================================= */
+    #delivery {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .delivery-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .delivery-img-wrap {
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #dde3ea, #c8d0da);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .8rem;
+      color: #8a96a3;
+      text-align: center;
+      padding: 20px;
+      /* Replace with: background-image: url('/images/canada-delivery.jpg'); background-size: cover; */
+    }
+    .delivery-provinces {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+    .province-tag {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--navy);
+      padding: 4px 12px;
+    }
+
+    /* =============================================
+       QUOTE FORM
+    ============================================= */
+    #quote {
+      padding: 90px 0;
+      background: var(--light);
+      border-top: 1px solid var(--border);
+    }
+    .quote-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .quote-form {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 44px 48px;
+      margin-top: 40px;
+      box-shadow: 0 4px 32px rgba(0,0,0,.06);
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-group label {
+      font-size: .83rem;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: .01em;
+    }
+    .form-group label span { color: #c0392b; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 11px 14px;
+      font-size: .9rem;
+      font-family: inherit;
+      color: var(--navy);
+      background: var(--white);
+      outline: none;
+      transition: border-color .2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(200,145,42,.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-note {
+      font-size: .78rem;
+      color: var(--muted);
+      margin-top: 16px;
+    }
+    .form-submit-wrap {
+      margin-top: 24px;
+      text-align: center;
+    }
+    .btn-submit {
+      background: var(--gold);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: .04em;
+      padding: 16px 44px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      transition: background .2s, transform .15s;
+    }
+    .btn-submit:hover { background: var(--gold-dk); transform: translateY(-1px); }
+    /* Success/error message */
+    #form-success, #form-error {
+      display: none;
+      padding: 16px;
+      border-radius: var(--radius);
+      margin-top: 20px;
+      font-size: .9rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    #form-success { background: #d4edda; color: #155724; }
+    #form-error   { background: #f8d7da; color: #721c24; }
+
+    /* =============================================
+       FAQ
+    ============================================= */
+    #faq { padding: 80px 0; background: var(--white); }
+    .faq-list {
+      max-width: 760px;
+      margin: 40px auto 0;
+    }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      background: var(--white);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 22px;
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--navy);
+      font-family: inherit;
+      transition: background .2s;
+    }
+    .faq-q:hover { background: var(--light); }
+    .faq-q .faq-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      fill: var(--gold);
+      transition: transform .3s;
+    }
+    .faq-item.open .faq-q .faq-icon { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease;
+      font-size: .9rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .faq-a-inner { padding: 0 22px 20px; }
+    .faq-item.open .faq-a { max-height: 300px; }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    #footer {
+      background: var(--navy);
+      color: rgba(255,255,255,.7);
+      padding: 60px 0 32px;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .footer-brand .logo { font-size: 1.2rem; margin-bottom: 14px; }
+    .footer-brand p { font-size: .88rem; line-height: 1.65; max-width: 320px; }
+    .footer-col h4 {
+      font-size: .85rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a { font-size: .88rem; color: rgba(255,255,255,.65); transition: color .2s; }
+    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-bottom {
+      margin-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: .8rem;
+      color: rgba(255,255,255,.4);
+    }
+
+    /* =============================================
+       RESPONSIVE
+    ============================================= */
+    @media (max-width: 900px) {
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+      .delivery-inner { grid-template-columns: 1fr; }
+      .delivery-img-wrap { display: none; }
+    }
+    @media (max-width: 700px) {
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 68px; left: 0; right: 0;
+        background: var(--navy);
+        padding: 20px;
+        gap: 18px;
+        z-index: 99;
+      }
+      .form-grid { grid-template-columns: 1fr; }
+      .quote-form { padding: 28px 22px; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .hero-btns { flex-direction: column; gap: 12px; }
+      .hero-stats { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header id="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="/" class="logo" aria-label="WholesaleChairs.ca — Home">
+      Wholesale<span>Chairs</span>.ca
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#featured">Products</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#quote" class="header-cta">Get a Quote</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<main>
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Canada-Wide B2B Commercial Supplier
+      </div>
+      <h1 id="hero-heading">
+        Commercial Chairs.<br />
+        <em>Wholesale Pricing.</em><br />
+        Canada-Wide Delivery.
+      </h1>
+      <p>
+        Restaurant, café, hotel and hospitality seating for commercial buyers.
+        Buying 20, 50, 100 or more chairs? Request your wholesale quote today.
+      </p>
+      <div class="hero-btns">
+        <a href="#quote" class="btn-primary">GET WHOLESALE PRICE</a>
+        <a href="#categories" class="btn-outline">VIEW CHAIRS</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-val">20+</div>
+          <div class="hero-stat-lbl">Minimum order</div>
+        </div>
+        <div>
+          <div class="hero-stat-val">10+</div>
+          <div class="hero-stat-lbl">Chair categories</div>
+        </div>
+        <div>
+          <div class="hero-stat-val">🇨🇦</div>
+          <div class="hero-stat-lbl">Ships coast to coast</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     TRUST BAR
+============================================================ -->
+<div id="trust-bar" aria-label="Key selling points">
+  <div class="container trust-bar-inner">
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      B2B Commercial Only
+    </div>
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+      Wholesale Pricing on Bulk Orders
+    </div>
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"/></svg>
+      Delivery to All Provinces
+    </div>
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg>
+      Restaurants, Hotels &amp; Hospitality
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     BROWSE BY CATEGORY
+============================================================ -->
+<section id="categories" aria-labelledby="categories-heading">
+  <div class="container">
+    <div class="section-label">Browse by Category</div>
+    <h2 class="section-title" id="categories-heading">Commercial Chair Categories</h2>
+    <p class="section-sub">All styles available for bulk wholesale orders — restaurants, hospitality venues and commercial spaces across Canada.</p>
+    <div class="categories-grid">
+
+      <!-- Category cards: replace cat-img-placeholder divs with real <img> tags when you have photos -->
+      <!-- Example: <img src="/images/restaurant-chairs-category.jpg" alt="Restaurant chairs for commercial use" class="cat-img" loading="lazy" /> -->
+
+      <article class="cat-card">
+        <div class="cat-img-placeholder" role="img" aria-label="Restaurant Chairs category">
+          <!-- REPLACE: /images/restaurant-chairs-category.jpg -->
+          Restaurant Chairs
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">Restaurant Chairs</div>
+          <a href="#quote" class="cat-link">Request Quote →</a>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <div class="cat-img-placeholder" role="img" aria-label="Café Chairs category">
+          <!-- REPLACE: /images/cafe-chairs-category.jpg -->
+          Café Chairs
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">Café Chairs</div>
+          <a href="#quote" class="cat-link">Request Quote →</a>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <div class="cat-img-placeholder" role="img" aria-label="Bar Stools category">
+          <!-- REPLACE: /images/bar-stools-category.jpg -->
+          Bar Stools
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">Bar Stools</div>
+          <a href="#quote" class="cat-link">Request Quote →</a>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <div class="cat-img-placeholder" role="img" aria-label="Banquet Chairs category">
+          <!-- REPLACE: /images/banquet-chairs-category.jpg -->
+          Banquet Chairs
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">Banquet Chairs</div>
+          <a href="#quote" class="cat-link">Request Quote →</a>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <div class="cat-img-placeholder" role="img" aria-label="Upholstered Chairs category">
+          <!-- REPLACE: /images/upholstered-chairs-category.jpg -->
+          Upholstered Chairs
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">Upholstered Chairs</div>
+          <a href="#quote" class="cat-link">Request Quote →</a>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <div class="cat-img-placeholder" role="img" aria-label="Metal Chairs category">
+          <!-- REPLACE: /images/metal-chairs-category.jpg -->
+          Metal Chairs
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">Metal Chairs</div>
+          <a href="#quote" class="cat-link">Request Quote →</a>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <div class="cat-img-placeholder" role="img" aria-label="Wood Chairs category">
+          <!-- REPLACE: /images/wood-chairs-category.jpg -->
+          Wood Chairs
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">Wood Chairs</div>
+          <a href="#quote" class="cat-link">Request Quote →</a>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <div class="cat-img-placeholder" role="img" aria-label="Patio Chairs category">
+          <!-- REPLACE: /images/patio-chairs-category.jpg -->
+          Patio &amp; Outdoor Chairs
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">Patio &amp; Outdoor Chairs</div>
+          <a href="#quote" class="cat-link">Request Quote →</a>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <div class="cat-img-placeholder" role="img" aria-label="Hotel and Hospitality Chairs category">
+          <!-- REPLACE: /images/hotel-hospitality-chairs-category.jpg -->
+          Hotel &amp; Hospitality Chairs
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">Hotel &amp; Hospitality Chairs</div>
+          <a href="#quote" class="cat-link">Request Quote →</a>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <div class="cat-img-placeholder" role="img" aria-label="Custom Commercial Seating category">
+          <!-- REPLACE: /images/custom-commercial-seating-category.jpg -->
+          Custom Commercial Seating
+        </div>
+        <div class="cat-body">
+          <div class="cat-name">Custom Commercial Seating</div>
+          <a href="#quote" class="cat-link">Request Quote →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FEATURED PRODUCTS
+============================================================ -->
+<section id="featured" aria-labelledby="featured-heading">
+  <div class="container">
+    <div class="section-label">Featured Commercial Chairs</div>
+    <h2 class="section-title" id="featured-heading">Popular Wholesale Chair Models</h2>
+    <p class="section-sub">A selection of our most requested commercial chairs for restaurants, cafés and hospitality venues.</p>
+    <div class="products-grid">
+
+      <article class="product-card">
+        <div class="product-img-wrap" role="img" aria-label="Classic Wood Restaurant Chair product image">
+          <!-- REPLACE with: <img src="/images/restaurant-chair-1.jpg" alt="Classic wood restaurant chair for commercial use" loading="lazy" /> -->
+          /images/restaurant-chair-1.jpg
+        </div>
+        <div class="product-body">
+          <div class="product-tag">Restaurant Chairs</div>
+          <h3 class="product-name">Classic Wood Restaurant Chair</h3>
+          <p class="product-desc">Durable solid wood construction with a comfortable contoured back. Suitable for restaurants and casual dining venues.</p>
+          <div class="product-footer">
+            <div class="product-moq">MOQ: <strong>20 units</strong></div>
+            <a href="#quote" class="product-cta">Get Wholesale Price →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-img-wrap" role="img" aria-label="Commercial Upholstered Dining Chair product image">
+          <!-- REPLACE with: <img src="/images/upholstered-chair-1.jpg" alt="Commercial upholstered dining chair for restaurants and hotels" loading="lazy" /> -->
+          /images/upholstered-chair-1.jpg
+        </div>
+        <div class="product-body">
+          <div class="product-tag">Upholstered Chairs</div>
+          <h3 class="product-name">Commercial Upholstered Dining Chair</h3>
+          <p class="product-desc">Padded seat and back in commercial-grade fabric. Available in multiple colours. Ideal for restaurants and hotel dining rooms.</p>
+          <div class="product-footer">
+            <div class="product-moq">MOQ: <strong>20 units</strong></div>
+            <a href="#quote" class="product-cta">Get Wholesale Price →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-img-wrap" role="img" aria-label="Industrial Metal Bar Stool product image">
+          <!-- REPLACE with: <img src="/images/bar-stool-1.jpg" alt="Industrial metal bar stool for commercial bars and restaurants" loading="lazy" /> -->
+          /images/bar-stool-1.jpg
+        </div>
+        <div class="product-body">
+          <div class="product-tag">Bar Stools</div>
+          <h3 class="product-name">Industrial Metal Bar Stool</h3>
+          <p class="product-desc">Heavy-duty welded steel frame with a footrest. Ideal for bars, brew pubs and casual dining counters.</p>
+          <div class="product-footer">
+            <div class="product-moq">MOQ: <strong>20 units</strong></div>
+            <a href="#quote" class="product-cta">Get Wholesale Price →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-img-wrap" role="img" aria-label="Folding Banquet Chair product image">
+          <!-- REPLACE with: <img src="/images/banquet-chair-1.jpg" alt="Folding banquet chair for event halls and conference spaces" loading="lazy" /> -->
+          /images/banquet-chair-1.jpg
+        </div>
+        <div class="product-body">
+          <div class="product-tag">Banquet Chairs</div>
+          <h3 class="product-name">Folding Banquet Chair</h3>
+          <p class="product-desc">Lightweight padded folding chair designed for banquet halls, event spaces and conference facilities.</p>
+          <div class="product-footer">
+            <div class="product-moq">MOQ: <strong>50 units</strong></div>
+            <a href="#quote" class="product-cta">Get Wholesale Price →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     BULK ORDER CTA
+============================================================ -->
+<section id="bulk-cta" aria-labelledby="bulk-heading">
+  <div class="container">
+    <h2 id="bulk-heading">Buying 20, 50, 100+ Chairs?</h2>
+    <p>We specialise in bulk wholesale chair orders for commercial buyers. The more you order, the better your per-unit pricing. Get a custom quote tailored to your project.</p>
+    <div class="bulk-tiers">
+      <div class="tier-badge"><span>20–49 units</span> — Wholesale pricing</div>
+      <div class="tier-badge"><span>50–99 units</span> — Volume discount</div>
+      <div class="tier-badge"><span>100+ units</span> — Best per-unit rate</div>
+    </div>
+    <a href="#quote" class="btn-primary">REQUEST YOUR WHOLESALE QUOTE</a>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     WHY CHOOSE US
+============================================================ -->
+<section id="why-us" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="section-label">Why Choose WholesaleChairs.ca</div>
+    <h2 class="section-title" id="why-heading">Built for Commercial Buyers</h2>
+    <p class="section-sub">We understand what restaurant and hospitality operators need — durable product, fair pricing and reliable delivery.</p>
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="why-title">Wholesale Pricing</div>
+        <div class="why-desc">Transparent bulk pricing with no hidden fees. Volume discounts on orders of 20 chairs and above.</div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <div class="why-title">Commercial-Grade Quality</div>
+        <div class="why-desc">All chairs are sourced and tested for durability in high-traffic commercial environments.</div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div class="why-title">Canada-Wide Delivery</div>
+        <div class="why-desc">We ship bulk chair orders to businesses in all provinces and territories across Canada.</div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        </div>
+        <div class="why-title">Dedicated Wholesale Support</div>
+        <div class="why-desc">Work directly with our wholesale team to find the right chair for your venue, budget and timeline.</div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+        </div>
+        <div class="why-title">Custom Options Available</div>
+        <div class="why-desc">Need a specific fabric, finish or frame colour? Custom commercial seating orders are welcome.</div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+        </div>
+        <div class="why-title">Straightforward Quotes</div>
+        <div class="why-desc">Submit your requirements once and receive a detailed wholesale quote — no phone tag, no runaround.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     INDUSTRIES WE SERVE
+============================================================ -->
+<section id="industries" aria-labelledby="industries-heading">
+  <div class="container">
+    <div class="section-label text-center">Industries We Serve</div>
+    <h2 class="section-title text-center" id="industries-heading">Who We Supply Chairs To</h2>
+    <p class="section-sub text-center">We work with a wide range of commercial buyers across the Canadian hospitality and food-service industries.</p>
+    <div class="industries-grid">
+      <div class="industry-card">
+        <div class="industry-icon" aria-hidden="true">🍽️</div>
+        <div class="industry-name">Restaurants</div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon" aria-hidden="true">☕</div>
+        <div class="industry-name">Cafés &amp; Coffee Shops</div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon" aria-hidden="true">🍺</div>
+        <div class="industry-name">Bars &amp; Brew Pubs</div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon" aria-hidden="true">🏨</div>
+        <div class="industry-name">Hotels &amp; Resorts</div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon" aria-hidden="true">🎉</div>
+        <div class="industry-name">Banquet Halls</div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon" aria-hidden="true">🛍️</div>
+        <div class="industry-name">Food Courts</div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon" aria-hidden="true">🏗️</div>
+        <div class="industry-name">Contractors &amp; Fit-Out Firms</div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon" aria-hidden="true">🎨</div>
+        <div class="industry-name">Interior Designers</div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon" aria-hidden="true">🏢</div>
+        <div class="industry-name">Corporate Cafeterias</div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon" aria-hidden="true">🎓</div>
+        <div class="industry-name">Institutional Dining</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CANADA-WIDE DELIVERY
+============================================================ -->
+<section id="delivery" aria-labelledby="delivery-heading">
+  <div class="container">
+    <div class="delivery-inner">
+      <div class="delivery-img-wrap" role="img" aria-label="Canada-wide chair delivery map">
+        <!-- REPLACE: /images/canada-delivery.jpg — use a map or delivery truck image -->
+        /images/canada-delivery.jpg
+      </div>
+      <div>
+        <div class="section-label">Canada-Wide Delivery</div>
+        <h2 class="section-title" id="delivery-heading">We Ship Wholesale Chair Orders Across Canada</h2>
+        <p class="section-sub">
+          Whether you are outfitting a new restaurant in Toronto, a café in Vancouver, a hotel in Calgary or a banquet hall in Montréal — we can deliver your wholesale chair order to your location.
+        </p>
+        <div class="delivery-provinces">
+          <span class="province-tag">Ontario</span>
+          <span class="province-tag">British Columbia</span>
+          <span class="province-tag">Alberta</span>
+          <span class="province-tag">Quebec</span>
+          <span class="province-tag">Manitoba</span>
+          <span class="province-tag">Saskatchewan</span>
+          <span class="province-tag">Nova Scotia</span>
+          <span class="province-tag">New Brunswick</span>
+          <span class="province-tag">Newfoundland</span>
+          <span class="province-tag">PEI</span>
+          <span class="province-tag">All Territories</span>
+        </div>
+        <div style="margin-top: 28px;">
+          <a href="#quote" class="btn-navy">Request a Delivery Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     WHOLESALE QUOTE FORM
+============================================================ -->
+<section id="quote" aria-labelledby="quote-heading">
+  <div class="container quote-wrap">
+    <div class="text-center">
+      <div class="section-label">Request a Wholesale Quote</div>
+      <h2 class="section-title" id="quote-heading">Tell Us What You Need</h2>
+      <p class="section-sub">
+        Fill in the form below and our wholesale team will send you a detailed quote within 1–2 business days.
+        No obligation, no pressure.
+      </p>
+    </div>
+
+    <!--
+      FORM SETUP INSTRUCTIONS (one-time, 2 minutes):
+      1. Go to https://formspree.io and create a free account.
+      2. Create a new form — copy the form endpoint URL (looks like: https://formspree.io/f/xxxxxxxx).
+      3. Replace YOUR_FORMSPREE_ENDPOINT below with that URL.
+      Free plan: 50 submissions/month. Paid plans available if you need more.
+    -->
+    <div class="quote-form">
+      <form id="quote-form" action="YOUR_FORMSPREE_ENDPOINT" method="POST" novalidate>
+
+        <!-- Hidden fields for Formspree -->
+        <input type="hidden" name="_subject" value="New Wholesale Chair Quote Request — WholesaleChairs.ca" />
+        <input type="hidden" name="_replyto" value="" />
+        <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="name">Your Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company / Restaurant Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="company" name="company" placeholder="Smith Restaurant Group" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jane@yourrestaurant.ca" required autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="416-555-0123" autocomplete="tel" />
+          </div>
+
+          <div class="form-group">
+            <label for="city">City <span aria-hidden="true">*</span></label>
+            <input type="text" id="city" name="city" placeholder="Toronto" required autocomplete="address-level2" />
+          </div>
+
+          <div class="form-group">
+            <label for="province">Province <span aria-hidden="true">*</span></label>
+            <select id="province" name="province" required autocomplete="address-level1">
+              <option value="" disabled selected>Select province…</option>
+              <option>Ontario</option>
+              <option>British Columbia</option>
+              <option>Alberta</option>
+              <option>Quebec</option>
+              <option>Manitoba</option>
+              <option>Saskatchewan</option>
+              <option>Nova Scotia</option>
+              <option>New Brunswick</option>
+              <option>Newfoundland and Labrador</option>
+              <option>Prince Edward Island</option>
+              <option>Northwest Territories</option>
+              <option>Yukon</option>
+              <option>Nunavut</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="product">Product / Chair Type <span aria-hidden="true">*</span></label>
+            <select id="product" name="product" required>
+              <option value="" disabled selected>Select chair type…</option>
+              <option>Restaurant Chairs</option>
+              <option>Café Chairs</option>
+              <option>Bar Stools</option>
+              <option>Banquet Chairs</option>
+              <option>Upholstered Chairs</option>
+              <option>Metal Chairs</option>
+              <option>Wood Chairs</option>
+              <option>Patio / Outdoor Chairs</option>
+              <option>Hotel &amp; Hospitality Chairs</option>
+              <option>Custom Commercial Seating</option>
+              <option>Not Sure — Need Advice</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Quantity Required <span aria-hidden="true">*</span></label>
+            <select id="quantity" name="quantity" required>
+              <option value="" disabled selected>Select quantity range…</option>
+              <option>20–49 chairs</option>
+              <option>50–99 chairs</option>
+              <option>100–199 chairs</option>
+              <option>200+ chairs</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label for="delivery-date">Required Delivery Date</label>
+            <input type="date" id="delivery-date" name="delivery_date" />
+          </div>
+
+          <div class="form-group full">
+            <label for="message">Additional Details</label>
+            <textarea id="message" name="message" placeholder="Tell us more about your project — venue type, any specific colours, fabric preferences, special requirements, etc."></textarea>
+          </div>
+
+        </div><!-- /form-grid -->
+
+        <p class="form-note">
+          Fields marked <span style="color:#c0392b">*</span> are required.
+          We respond to all quote requests within 1–2 business days.
+          Your information is used solely to prepare your quote.
+        </p>
+
+        <div class="form-submit-wrap">
+          <button type="submit" class="btn-submit">REQUEST WHOLESALE QUOTE</button>
+        </div>
+
+        <div id="form-success" role="alert">
+          ✅ Thank you! Your quote request has been received. We will be in touch within 1–2 business days.
+        </div>
+        <div id="form-error" role="alert">
+          ⚠️ Something went wrong. Please try again or email us directly.
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Frequently Asked Questions</div>
+      <h2 class="section-title" id="faq-heading">Common Questions</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What is the minimum order quantity for wholesale chairs?
+          <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">We work with commercial buyers ordering 20 or more chairs. Larger orders of 50, 100 or more qualify for deeper wholesale pricing. Contact us for a custom quote.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do you ship chairs across Canada?
+          <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. We deliver wholesale chair orders Canada-wide, including Ontario, British Columbia, Alberta, Quebec, and all other provinces and territories.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How long does delivery take for bulk chair orders?
+          <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Lead times vary depending on the product, quantity and your location. We provide estimated delivery timelines when we send your wholesale quote.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Can I order custom or upholstered chairs in my brand colours?
+          <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. We offer custom commercial seating options including upholstery, frame finishes and colour matching. Request a quote and describe your requirements in the message field.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do you sell to individual consumers or homeowners?
+          <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">WholesaleChairs.ca is a B2B supplier for restaurants, cafés, hotels, banquet halls, contractors and commercial buyers. We do not service individual consumer orders.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What types of commercial chairs do you carry?
+          <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">We supply restaurant chairs, café chairs, bar stools, banquet chairs, upholstered chairs, metal chairs, wood chairs, patio chairs, hotel and hospitality seating, and custom commercial seating.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main><!-- /main -->
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer id="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">Wholesale<span>Chairs</span>.ca</div>
+        <p>Canada's wholesale commercial chair supplier for restaurants, cafés, hotels, banquet halls and hospitality venues. Serving commercial buyers coast to coast.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Chair Types</h4>
+        <ul>
+          <li><a href="#categories">Restaurant Chairs</a></li>
+          <li><a href="#categories">Café Chairs</a></li>
+          <li><a href="#categories">Bar Stools</a></li>
+          <li><a href="#categories">Banquet Chairs</a></li>
+          <li><a href="#categories">Upholstered Chairs</a></li>
+          <li><a href="#categories">Patio Chairs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why-us">Why Choose Us</a></li>
+          <li><a href="#industries">Industries We Serve</a></li>
+          <li><a href="#delivery">Canada-Wide Delivery</a></li>
+          <li><a href="#quote">Get a Quote</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="footer-year"></span> WholesaleChairs.ca — All rights reserved.</div>
+      <div>Wholesale commercial chairs for Canadian businesses.</div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script>
+  /* --- Year --- */
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  /* --- Mobile nav --- */
+  const toggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* --- FAQ accordion --- */
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* --- Quote form with Formspree --- */
+  const form = document.getElementById('quote-form');
+  const success = document.getElementById('form-success');
+  const error   = document.getElementById('form-error');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    success.style.display = 'none';
+    error.style.display   = 'none';
+
+    // Basic client-side validation
+    const required = form.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(field => {
+      if (!field.value.trim()) {
+        field.style.borderColor = '#c0392b';
+        valid = false;
+      } else {
+        field.style.borderColor = '';
+      }
+    });
+    if (!valid) {
+      error.textContent = '⚠️ Please fill in all required fields.';
+      error.style.display = 'block';
+      return;
+    }
+
+    const btn = form.querySelector('.btn-submit');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        success.style.display = 'block';
+        form.reset();
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      error.textContent = '⚠️ Something went wrong. Please try again or email us directly.';
+      error.style.display = 'block';
+    } finally {
+      btn.textContent = 'REQUEST WHOLESALE QUOTE';
+      btn.disabled = false;
+    }
+  });
+</script>
+
+</body>
+</html>
