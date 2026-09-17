@@ -1,0 +1,5 @@
+Contact: https://wholesalechairs.ca/#quote
+Expires: 2027-09-30T00:00:00.000Z
+Preferred-Languages: en, fr
+Canonical: https://wholesalechairs.ca/.well-known/security.txt
+Policy: https://wholesalechairs.ca/privacy.html
