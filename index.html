@@ -37,12 +37,16 @@
     "areaServed": "CA",
     "address": {
       "@type": "PostalAddress",
+      "addressLocality": "Mississauga",
+      "addressRegion": "ON",
       "addressCountry": "CA"
     },
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Sales",
-      "email": "info@wholesalechairs.ca"
+      "url": "https://wholesalechairs.ca/#quote",
+      "areaServed": "CA",
+      "availableLanguage": ["en", "fr"]
     }
   }
   </script>
@@ -814,6 +818,11 @@
     }
     .footer-brand .logo { font-size: 1.2rem; margin-bottom: 14px; }
     .footer-brand p { font-size: .88rem; line-height: 1.65; max-width: 320px; }
+    .footer-contact { font-style: normal; font-size: .84rem; line-height: 1.7; margin-top: 14px; color: rgba(255,255,255,.65); }
+    .footer-contact a { color: rgba(255,255,255,.85); text-decoration: underline; }
+    .footer-bottom a { color: inherit; text-decoration: underline; }
+    .form-privacy { font-size: .8rem; line-height: 1.6; margin-top: 12px; opacity: .8; }
+    .form-privacy a { text-decoration: underline; color: inherit; }
     .footer-col h4 {
       font-size: .85rem;
       font-weight: 700;
@@ -3556,12 +3565,13 @@
         <div class="form-submit-wrap">
           <button type="submit" class="btn-submit">REQUEST WHOLESALE QUOTE</button>
         </div>
+        <p class="form-privacy">By submitting this form you agree to our <a href="/privacy.html">Privacy Policy</a>. Your details are used only to prepare your quote and are never sold or shared.</p>
 
         <div id="form-success" role="alert">
           ✅ Thank you! Your quote request has been received. We will be in touch within 1–2 business days.
         </div>
         <div id="form-error" role="alert">
-          ⚠️ Something went wrong. Please try again or email us directly.
+          ⚠️ Something went wrong. Please try again in a moment.
         </div>
 
       </form>
@@ -3645,6 +3655,10 @@
       <div class="footer-brand">
         <div class="logo">Wholesale<span>Chairs</span>.ca</div>
         <p>Canada's wholesale commercial chair supplier for restaurants, cafés, hotels, banquet halls and hospitality venues. Serving commercial buyers coast to coast.</p>
+        <address class="footer-contact">
+          Canadian-owned and operated — Mississauga, Ontario, Canada<br>
+          Contact us: <a href="#quote">fill out the quote form</a> and we reply within 1–2 business days
+        </address>
       </div>
       <div class="footer-col">
         <h4>Chair Types</h4>
@@ -3665,12 +3679,13 @@
           <li><a href="#delivery">Canada-Wide Delivery</a></li>
           <li><a href="#quote">Get a Quote</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© <span id="footer-year"></span> WholesaleChairs.ca — All rights reserved.</div>
-      <div>Wholesale commercial chairs for Canadian businesses.</div>
+      <div>© <span id="footer-year"></span> WholesaleChairs.ca — Canadian-owned, Mississauga, ON — All rights reserved.</div>
+      <div><a href="/privacy.html">Privacy Policy</a> · Wholesale commercial chairs for Canadian businesses.</div>
     </div>
   </div>
 </footer>
@@ -3757,7 +3772,7 @@
         throw new Error('Server error');
       }
     } catch {
-      error.textContent = '⚠️ Something went wrong. Please try again or email us directly.';
+      error.textContent = '⚠️ Something went wrong. Please try again in a moment.';
       error.style.display = 'block';
     } finally {
       btn.textContent = 'REQUEST WHOLESALE QUOTE';
