@@ -3447,19 +3447,21 @@
     </div>
 
     <!--
-      FORM SETUP INSTRUCTIONS (one-time, 2 minutes):
-      1. Go to https://formspree.io and create a free account.
-      2. Create a new form — copy the form endpoint URL (looks like: https://formspree.io/f/xxxxxxxx).
-      3. Replace YOUR_FORMSPREE_ENDPOINT below with that URL.
-      Free plan: 50 submissions/month. Paid plans available if you need more.
+      Form backend: FormSubmit.co (free, no account, unlimited submissions).
+      Submissions are emailed to the address in the action URL. The first submission
+      triggers a one-time activation email to that inbox — click "Activate" once.
+      After activation, FormSubmit also provides a random alias string that can replace
+      the email address in the action URL to keep it out of the page source.
     -->
     <div class="quote-form">
-      <form id="quote-form" action="https://formspree.io/f/xkjnpqyw" method="POST" novalidate>
+      <form id="quote-form" action="https://formsubmit.co/ajax/artefac.canada@gmail.com" method="POST" novalidate>
 
-        <!-- Hidden fields for Formspree -->
+        <!-- Hidden fields for FormSubmit -->
         <input type="hidden" name="_subject" value="New Wholesale Chair Quote Request — WholesaleChairs.ca" />
-        <input type="hidden" name="_replyto" value="" />
-        <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_autoresponse" value="Thank you for your wholesale quote request. We have received your details and will reply within 1–2 business days. — WholesaleChairs.ca" />
+        <input type="text" name="_honey" style="display:none" aria-hidden="true" tabindex="-1" />
 
         <div class="form-grid">
 
@@ -3728,7 +3730,7 @@
     });
   });
 
-  /* --- Quote form with Formspree --- */
+  /* --- Quote form via FormSubmit.co (AJAX endpoint returns JSON) --- */
   const form = document.getElementById('quote-form');
   const success = document.getElementById('form-success');
   const error   = document.getElementById('form-error');
